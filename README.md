@@ -25,3 +25,18 @@
 git push origin --force --all
 ```
 به جای path to the file or directory در اینجا dir/.env را جایگزین می‌کنیم.
+
+### بند سوم
+برای این بخش یک branch جدید ساخته شد و تغییرات بر روی این branch جدید به نام temp اضافه شد.
+
+### بند چهارم
+در این بند branch جدید ساخته شد و ۳ commit روی آن داشتیم. حال برای انکه یک commit به خصوص  از branch add-3-commit به شاخه اصلی اضافه شود ابتدا به branch main منتقل شدیم و با دستور زیر 
+```
+git cherry-pick f1a4d20
+```
+و سپس 
+```
+git push 
+```
+آن تغییر را به شاخه اصلی اضافه کردیم. شناسه f1a4d20 کد مخصوص به آن commit مورد نظر ما بود که در صفحه commit مربوط به branch مشخص است.
+در مرحله آخر هم یک pull request به شاخه main میفرستیم.
